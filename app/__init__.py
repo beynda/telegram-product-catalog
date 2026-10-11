@@ -1,0 +1,2 @@
+"""Telegram product catalog package."""
+
