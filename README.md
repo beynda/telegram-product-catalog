@@ -93,6 +93,10 @@ The mapping in `app/media.py` connects product names to bundled photos. You can 
 
 Tests use temporary databases and mock Telegram calls. They do not contact Telegram or send messages. This initial release has passed 23 local tests, but has not been tested against a live Telegram bot. Validate Telegram behavior with your own bot before relying on it. Report reproducible problems through GitHub Issues.
 
+## Engineering note
+
+[How CSV imports avoid partial catalog updates](docs/csv-import-design.md) explains validation, transaction rollback, category replacement and markup persistence, with links to the implementation and tests.
+
 ## License
 
 Code is licensed under MIT; see `LICENSE`. Photos are excluded from that license; see `assets/product_photos/SOURCES.md`. Third-party dependencies retain their own licenses.
